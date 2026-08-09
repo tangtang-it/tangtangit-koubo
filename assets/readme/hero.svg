@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="380" viewBox="0 0 1200 380"
+     role="img" aria-labelledby="hero-title title-desc">
+  <title id="hero-title">tangtangit-koubo — 口播脚本转化</title>
+  <desc id="title-desc">AI Skill，把书面化的脚本改写为自然流畅、可直接录制的口播逐字稿。数字中文化、网址读「点」、tangtang 一律读作糖糖，删过度口语词、表格展开为完整口述，专为 TTS 配音设计。</desc>
+
+  <defs>
+    <linearGradient id="paperG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF4E8"/>
+      <stop offset="1" stop-color="#F2E5C9"/>
+    </linearGradient>
+    <style>
+      .ink   { fill: #2A1B0E; }
+      .ink-2 { fill: #4A3728; }
+      .ink-3 { fill: #8A7458; }
+      .cream { fill: #FFFBF1; }
+      .orange { fill: #E0824A; }
+      .coral  { fill: #E89579; }
+      .stroke-thin { stroke: #4A3728; stroke-width: 1.5; fill: none; stroke-linecap: round; }
+      .stroke-mid  { stroke: #4A3728; stroke-width: 2; fill: none; stroke-linecap: round; }
+      .handwriting { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono         { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="1200" height="380" rx="28" fill="url(#paperG)"/>
+
+  <!-- 顶部装饰：左侧声波点 -->
+  <g transform="translate(56 38)">
+    <text x="0" y="0" font-size="18" class="ink-3 mono" letter-spacing="2">AI SKILL · ORAL SCRIPT</text>
+  </g>
+
+  <!-- 左侧：标题块 -->
+  <g transform="translate(60 88)">
+    <text x="0" y="0" font-size="22" class="orange handwriting" font-weight="700">糖糖IT ·</text>
+    <text x="0" y="68" font-size="64" font-weight="800" class="ink handwriting">口播脚本转化</text>
+    <text x="0" y="118" font-size="24" class="ink-2 handwriting">把书面脚本变成</text>
+    <text x="0" y="152" font-size="24" class="ink-2 handwriting">可录制的口播逐字稿。</text>
+  </g>
+
+  <!-- 左侧：底部三个徽章 -->
+  <g transform="translate(60 270)">
+    <!-- 徽章 1：纯文本稿 -->
+    <g transform="translate(0 0)">
+      <rect x="0" y="0" width="172" height="42" rx="21" class="cream" stroke="#4A3728" stroke-width="2"/>
+      <g transform="translate(24 21)">
+        <line x1="-9" y1="-9" x2="9" y2="-9" stroke="#4A3728" stroke-width="2"/>
+        <line x1="-9" y1="-3" x2="6" y2="-3" stroke="#4A3728" stroke-width="2"/>
+        <line x1="-9" y1="3" x2="9" y2="3" stroke="#4A3728" stroke-width="2"/>
+        <line x1="-9" y1="9" x2="4" y2="9" stroke="#4A3728" stroke-width="2"/>
+      </g>
+      <text x="48" y="27" font-size="18" class="ink-2 handwriting" font-weight="600">纯文本逐字稿</text>
+    </g>
+    <!-- 徽章 2：TTS 友好 -->
+    <g transform="translate(192 0)">
+      <rect x="0" y="0" width="160" height="42" rx="21" class="cream" stroke="#4A3728" stroke-width="2"/>
+      <g transform="translate(24 21)">
+        <rect x="-7" y="-9" width="14" height="18" rx="7" fill="none" stroke="#E0824A" stroke-width="2"/>
+        <path d="M-12 -3 L-12 3 M-7 -9 L-7 9 M7 -7 L7 7 M12 -3 L12 3" stroke="#E0824A" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text x="48" y="27" font-size="18" class="ink-2 handwriting" font-weight="600">TTS 友好</text>
+    </g>
+    <!-- 徽章 3：去过度口语 -->
+    <g transform="translate(372 0)">
+      <rect x="0" y="0" width="206" height="42" rx="21" class="cream" stroke="#4A3728" stroke-width="2"/>
+      <g transform="translate(24 21)">
+        <path d="M-8 0 L-2 6 L8 -6" stroke="#355C7D" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="48" y="27" font-size="18" class="ink-2 handwriting" font-weight="600">去过度口语词</text>
+    </g>
+  </g>
+
+  <!-- 分隔细线 -->
+  <line x1="700" y1="60" x2="700" y2="330" stroke="#4A3728" stroke-width="1.5" stroke-dasharray="2 6" opacity="0.5"/>
+
+  <!-- 右侧：逐字稿稿纸 + 转换对比 -->
+  <g transform="translate(740 56)">
+    <!-- 稿纸（左边：原文） -->
+    <g transform="translate(0 0)">
+      <rect x="0" y="0" width="200" height="260" rx="10" fill="#FFFBF1" stroke="#4A3728" stroke-width="2"/>
+      <text x="100" y="22" font-size="14" class="ink-3 mono" text-anchor="middle" letter-spacing="1.5">BEFORE · 书面</text>
+      <line x1="16" y1="40" x2="184" y2="40" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="68" x2="184" y2="68" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="96" x2="184" y2="96" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="124" x2="184" y2="124" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="152" x2="184" y2="152" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="180" x2="184" y2="180" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="208" x2="184" y2="208" stroke="#C9B89B" stroke-width="1"/>
+      <line x1="16" y1="236" x2="184" y2="236" stroke="#C9B89B" stroke-width="1"/>
+
+      <text x="16" y="58" font-size="15" class="ink-2 handwriting" opacity="0.85">90 天导入数据</text>
+      <text x="16" y="86" font-size="15" class="ink-2 handwriting" opacity="0.85">网址 kimpremium.com</text>
+      <text x="16" y="114" font-size="15" class="ink-2 handwriting" opacity="0.85">来点硬货！</text>
+      <text x="16" y="142" font-size="15" class="ink-2 handwriting" opacity="0.85">咱们上期搭了工作台</text>
+      <text x="16" y="170" font-size="15" class="ink-2 handwriting" opacity="0.85">关注 tangtang-it</text>
+      <text x="16" y="198" font-size="15" class="ink-2 handwriting" opacity="0.85">……</text>
+    </g>
+
+    <!-- 箭头 -->
+    <g transform="translate(214 130)">
+      <path d="M0 0 H32" stroke="#E0824A" stroke-width="3" stroke-linecap="round"/>
+      <path d="M26 -8 L36 0 L26 8 Z" fill="#E0824A"/>
+    </g>
+
+    <!-- 稿纸（右边：口播稿） -->
+    <g transform="translate(260 0)">
+      <rect x="0" y="0" width="200" height="260" rx="10" fill="#FFFBF1" stroke="#E0824A" stroke-width="3"/>
+      <text x="100" y="22" font-size="14" class="orange mono" text-anchor="middle" letter-spacing="1.5" font-weight="700">AFTER · 口播</text>
+      <line x1="16" y1="40" x2="184" y2="40" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="68" x2="184" y2="68" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="96" x2="184" y2="96" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="124" x2="184" y2="124" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="152" x2="184" y2="152" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="180" x2="184" y2="180" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="208" x2="184" y2="208" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+      <line x1="16" y1="236" x2="184" y2="236" stroke="#E0824A" stroke-width="1" opacity="0.45"/>
+
+      <text x="16" y="58" font-size="15" class="ink handwriting" font-weight="600">九十天的数据导入</text>
+      <text x="16" y="86" font-size="15" class="ink handwriting" font-weight="600">网址是 kimpremium 点 com</text>
+      <text x="16" y="114" font-size="15" class="ink handwriting" font-weight="600">这期就上硬货</text>
+      <text x="16" y="142" font-size="15" class="ink handwriting" font-weight="600">上期视频我们搭了工作台</text>
+      <text x="16" y="170" font-size="15" class="ink handwriting" font-weight="600">关注 糖糖it</text>
+      <text x="16" y="222" font-size="11" class="ink-3 mono" text-anchor="middle">PUNCTUATION-DRIVEN RHYTHM</text>
+    </g>
+  </g>
+
+  <!-- 右侧底部：仓库元信息 -->
+  <g transform="translate(60 350)">
+    <text x="0" y="14" font-size="14" class="ink-3 mono">tangtang-it/tangtangit-koubo</text>
+    <text x="320" y="14" font-size="14" class="ink-3 mono">SKILL · MIT</text>
+  </g>
+</svg>
